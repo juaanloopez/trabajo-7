@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@500&family=Instrument+Sans&family=Konkhmer+Sleokchher&family=Noto+Serif&display=swap');
+
+body{
+    background-color: #c4c4c4 ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.barra_navegacion{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #222;
+    padding: 15px;
+    border-bottom: 2px solid #fff;
+    position: relative;
+    z-index: 1;
+    height: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem
+}
+
+.barra_navegacion a{
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Noto Serif', serif;
+}
+
+.rheemlogo{
+    width: 50px;
+    object-fit: cover;
+}
+
+.logo{
+    margin-right: 50px;
+}
+
+.navbar-toggler{
+    background-color: #fff;
+}
+
+.lista{
+    list-style: none;
+    display: flex;
+    gap: 49px;
+    align-items: center;
+    color: #D71B2C;
+    column-gap: 2rem;
+}
+
+.lista a:hover{
+    color: #fff;
+    border-bottom: 3px solid #fff;
+}
+
+#toggler,.barra_navegacion label{
+    display: none;
+}
+
+@media (max-width:300px){
+    .menu{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+    
+    .lista{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .barra_navegacion label{
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    #toggler:checked .menu{
+        max-height: 100%;
+    }
+    
+}
+
+.slide{
+    margin-top: 5rem;
+}
+
+.d-item{
+    width: 100%;
+}
+
+.d-img{
+    height: 500px;
+    object-fit: cover;
+}
+
+
+.titulo{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.titulo h5{
+    font-weight: 500;
+    color: #D71B2C;
+    font-family: 'Konkhmer Sleokchher', cursive;
+}
+
+.titulo h2{
+    color: #000;
+    font-family: 'Geologica', sans-serif;
+}
+
+.titulo p{
+    font-size: 0.938rem;
+    font-weight: 300;
+    color: #000;
+    font-family: 'Instrument Sans', sans-serif;
+}
+
+.calefones{
+    padding: 7rem 0 3rem;
+}
+
+.calefones-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.calefones-container .box{
+    flex:1 1 17rem;
+    position: relative;
+    /* width: 200px; */
+    border-radius: 0,5rem;
+    overflow: hidden;
+}
+
+.calefones-container .box img{
+    height: 40rem;
+    position: relative;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.calefones-container .box img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.card-body a{
+    width: 100%;
+    height: 100%;
+}
+
+.card hr{
+    display: block;
+    margin: 1.2em 0;
+    border-top: none;
+    border-bottom: 2px solid #fff;
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+.card h5{
+    text-align: center;
+    color: #D71B2C;
+    font-family: 'Konkhmer Sleokchher', cursive;
+}
+
+.card p{
+    text-align: center;
+    color: #ccc;
+    font-family: 'Instrument Sans', sans-serif;
+}
+
+.card li{
+    color: #ccc;
+    font-family: 'Instrument Sans', sans-serif;
+}
+
+.card ::marker{
+    color: #D71B2C;
+}
+
+.card a{
+    background-color: #D71B2C;
+    color: #ccc;
+    font-family: 'Noto Serif', serif;
+}
+
+.card a:hover{
+    background-color: #D71B2C;
+    color: #ccc;
+}
+
+.card{
+    background-color: #333;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.sobrenosotros{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3rem;
+    padding: 7rem 0 3rem;
+}
+
+.sobrenosotros img{
+    flex: 1 1 21rem;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+.sobrenosotros img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.sobrenosotros-texto{
+    flex: 1 1 21rem;
+}
+
+.sobrenosotros-texto h5{
+    font-weight: 500;
+    color: #D71B2C;
+    font-family: 'Konkhmer Sleokchher', cursive;
+}
+
+.sobrenosotros-texto h2{
+    font-size: 1.7rem;
+    color: #000;
+    font-family: 'Geologica', sans-serif;
+}
+
+.sobrenosotros-texto p{
+    font-size: 0.938rem;
+    margin: 0.5rem 0 1.4rem;
+    color: #000;
+    font-family: 'Instrument Sans', sans-serif;
+}
+
+.sobrenosotros-texto a{
+    background-color: #D71B2C;
+    color: #ccc;
+    font-family: 'Noto Serif', serif;
+}
+
+.sobrenosotros-texto a:hover{
+    background-color: #D71B2C;
+    color: #ccc;
+}
+
+#contacto{
+    background-color: #222;
+    margin-top: 5rem;
+    border-top: 3px solid #D71B2C;
+}
+
+.formulario-registro{
+    width: 55%;
+    background: #222;
+    padding: 30px;
+    margin: auto;
+    margin-top: 10px;
+    color: #ccc;
+    font-family: 'Instrument Sans', sans-serif;
+}
+
+.controles{
+    width: 100%;
+    color: #ccc;
+    background: #2f2f2f;
+    padding: 0.5em 1em;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    border: 1px solid #555;
+    font-size: 18px;
+    resize: none;
+    font-family: 'Instrument Sans', sans-serif;
+}
+
+.controles:focus{
+    border: 3px solid #D71B2C;
+}
+
+.boton-derecha{
+    text-align: right;
+}
+
+.boton{
+    background-color: #D71B2C;
+    border-color: #D71B2C;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    padding: 0.4em 1.9em;
+    line-height: 1.5;
+    color: #ccc;
+    margin: 16px 0;
+    font-family: 'Noto Serif', serif;
+}
+
+.col-6{
+    width: 50%;
+    margin: auto;
+    padding: 5px;
+}
+
+.form-izquierda{
+    text-align: left;
+}
+
+#rojo{
+    color: #D71B2C;
+}
+
+footer{
+    background: #222;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: #D71B2C;
+    margin: auto;
+    margin-top: 2%;
+}
+
+.footer-contenido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-bottom: 2px solid #D71B2C;
+}
+
+.footer-contenido h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    font-family: 'Konkhmer Sleokchher', cursive;
+}
+
+.footer-contenido h4{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    font-family: 'Noto Serif', serif;
+}
+
+.redessociales{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.redessociales li{
+    margin: 0 10px;
+    width: 3rem;
+}
+
+.redessociales a{
+    text-decoration: none;
+    color: #ccc;
+}
+
+.redessociales a:hover{
+    color: #D71B2C;
+}
+
+.footer-boton{
+    background: #000;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+}
+
+.footer-boton{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.comprarproducto{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4rem;
+    padding: 9rem 0 3rem;
+    margin: auto;
+}
+
+.comprarproducto-texto{
+    flex: 1 1 21rem;
+}
+
+.sobrenosotros-img img{
+    height: 400px;
+}
+
+.comprarproducto-img img{
+    flex: 1 1 21rem;
+    margin: 10%;
+    height: 500px;
+    padding-left: 150px;
+}
+
+.comprarproducto-texto h1{
+    font-weight: 500;
+    color: #D71B2C;
+    font-family: 'Konkhmer Sleokchher', cursive;
+}
+
+.precio{
+    font-weight: bold;
+}
+
+.comprarproducto-texto h4{
+    color: #30b9eb;
+    font-weight: bold;
+}
+
+.comprarproducto-texto h2{
+    font-size: 1.7rem;
+    color: #000;
+    font-family: 'Geologica', sans-serif;
+}
+
+.comprarproducto-texto p{
+    line-height: 0.5;
+    font-size: 1rem;
+    margin: 0.5rem 0 1.4rem;
+    color: #000;
+    font-family: 'Instrument Sans', sans-serif;
+}
+
+.comprarproducto-texto ul{
+    color: #000;
+    font-family: 'Instrument Sans', sans-serif;
+}
+
+.comprarproducto-texto h5{
+    padding: 7px;
+}
+
+.comprarproducto-texto ::marker{
+    color: #D71B2C;
+}
+
+.caracteristicas{
+    padding: 3rem;
+    margin: auto;
+}
+
+.caracteristicas h2{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.7rem;
+    color: #D71B2C;
+    font-family: 'Geologica', sans-serif;
+}
+
+.caracteristicas ul{
+    color: #000;
+    margin-bottom: 3rem;
+    font-family: 'Instrument Sans', sans-serif;
+}
+
+.caracteristicas hr{
+    display: block;
+    margin: 1.2em 0;
+    border-top: none;
+    border-bottom: 2px solid #000;
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+.caracteristicas ::marker{
+    color: #D71B2C;
+}
